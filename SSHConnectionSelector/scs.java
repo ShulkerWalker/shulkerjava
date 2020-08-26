@@ -1,19 +1,18 @@
 //ShulkerOliverChin-Project-2
-import java.io.File;
+import java.io.*;
 public class scs {
 	public static void main(String[] args) {
-		System.out.println("[CSC]Welcome to SSHConnectionSelector");
-		File file=new File("./scs_config/");
-		File file1=new File("./scs_config/configs");
-		try {
-		}	catch (Object e) {
-			if(!isDirectory()) {
-				file.mkdir();
-				file1.createNewFile();
-			}
-			else {
-				file1.createNewFile();
-			}
+		System.out.println ("[CSC]Welcome to SSHConnectionSelector");
+		File file=new File ("./config");
+		if(!file.exists()) {
+			file.mkdir();
+		}
+		try{
+			BufferedWriter bw=new BufferedWriter (new FileWriter ("./config/server.json"));
+			bw.write ("//Put your server's config here.");
+			bw.close ();
+		}catch (IOException e){
+			e.printStackTrace();
 		}
 	}
 }
