@@ -11,8 +11,16 @@ public class scs {
 			BufferedWriter bw=new BufferedWriter (new FileWriter ("./config/server.json"));
 			bw.write ("//Put your server's config here.");
 			bw.close ();
-		}catch (IOException e){
+		}
+		catch (IOException e){
 			e.printStackTrace();
+		}
+		if (args.length==0){
+                        System.out.println("[CSC]Please enter a option");
+		}
+		else{
+			System.out.println("[CSC]"+args[0]);
 		}
 	}
 }
+	
