@@ -1,8 +1,9 @@
+package com.shulker.scs;
 //ShulkerOliverChin-Project-2
 import java.io.*;
 public class scs {
 	public static void main(String[] args) {
-		System.out.println ("[CSC]Welcome to SSHConnectionSelector");
+		System.out.println ("[SCS]Welcome to SSHConnectionSelector");
 		File file=new File ("./config");
 		if(!file.exists()) {
 			file.mkdir();
@@ -16,11 +17,14 @@ public class scs {
 			e.printStackTrace();
 		}
 		if (args.length==0){
-                        System.out.println("[CSC]Please enter a option");
+                        System.out.println("[SCS]Please enter a option");
+			java.lang.Thread.sleep(10);
+			System.out.println("[SCS]<add> <Name> <Account> <IP> <Port>");
+			System.out.println("[SCS]Add a ssh server config");
 		}
-		else{
-			System.out.println("[CSC]"+args[0]);
+		if (args[0]=="add"){
 		}
+
 	}
 }
 	
