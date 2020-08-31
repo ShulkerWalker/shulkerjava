@@ -23,18 +23,16 @@ public class scs {
 				if (args.length == 4){
 					System.out.println("[SCS]Add server's config successfully "+ args[1] + "@" + args[2] + ":" + args[3]);
 				}
+				else {
+					System.out.println("[SCS]Usage: add <Account> <IP> <Port>");
+				}
 			}
-			else{
-				System.out.println("[SCS]Usage: add <Account> <IP> <Port>");
+			else {
+				System.out.println("[SCS]Please enter a option");
+				System.out.println("[SCS]<add> <delete> <ssh> <sftp> <list>");
 			}
 		}
 		else {
-			try {
-				Thread.sleep(1000);
-			}
-			catch (InterruptedException ex) {
-				Thread.currentThread().interrupt();
-			}
 			System.out.println("[SCS]Please enter a option");
 			System.out.println("[SCS]<add> <delete> <ssh> <sftp> <list>");
 		}
