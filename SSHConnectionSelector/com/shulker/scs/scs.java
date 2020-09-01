@@ -1,4 +1,3 @@
-package com.shulker.scs;
 //ShulkerOliverChin-Project-2
 import java.io.*;
 import java.nio.file.Files;
